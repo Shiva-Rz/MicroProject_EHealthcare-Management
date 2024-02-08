@@ -8,10 +8,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.hms.bean.login;
+
 import com.hms.bean.Login;
 import com.hms.bean.User;
 import com.hms.service.LoginService;
 
+@CrossOrigin
 @RestController
 @CrossOrigin("http://localhost:4200/")
 public class LoginController {
