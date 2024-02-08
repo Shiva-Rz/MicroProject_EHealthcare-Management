@@ -1,0 +1,28 @@
+.pres1 {
+    background-image: url('https://www.victorymenshealth.com/wp-content/uploads/2021/01/Victory-Blog-Images.jpg');
+    font-family: 'Times New Roman', Times, serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 92%;
+}
+
+mat-form-field {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+mat-card {
+    border-radius: 20px;
+    margin: auto;
+    width: 40%;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    border-color: 2px black;
+}
+
+table{
+   margin: auto;
+}
+
+.result {
+    justify-content: center;
+}

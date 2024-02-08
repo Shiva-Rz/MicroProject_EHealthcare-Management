@@ -1,0 +1,141 @@
+<body class="bgit">
+    <div class="div1">
+        <mat-card class="example-card">
+
+            <mat-card-header>
+
+                <mat-card-title class="title">
+                    New User !
+                </mat-card-title>
+
+            </mat-card-header>
+            <br>
+            <mat-card-content class="card1">
+
+                <form [formGroup]="myform" id="myform">
+                    <table>
+                        <tr>
+                            <td>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>User Id</mat-label>
+                                    <input matInputtype="number" placeholder="" aria-label="Number" matInput
+                                        formControlName="userId" name="id">
+                                </mat-form-field>
+                                <div *ngIf="myform.get('userId')!.touched && myform.get('userId')!.invalid">
+                                    <div *ngIf="myform.get('userId')!.hasError('required')">
+                                        <font color="red">*User Id is required</font>
+                                    </div>
+                                    <div *ngIf="myform.get('userId')!.hasError('pattern')">
+                                        <font color="red">*Invalid User Id</font>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>User Type</mat-label>
+                                    <input matInputtype="text" placeholder="" aria-label="Name" matInput
+                                        formControlName="userType" name="type">
+                                </mat-form-field>
+                                <div *ngIf="myform.get('userType')!.touched && myform.get('userType')!.invalid">
+                                    <div *ngIf="myform.get('userType')!.hasError('required')">
+                                        <font color="red">*User Type is required</font>
+                                    </div>
+                                    <div *ngIf="myform.get('userType')!.hasError('pattern')">
+                                        <font color="red">*Invalid User Type</font>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>User Name</mat-label>
+                                    <input matInputtype="text" placeholder="" aria-label="Name" matInput
+                                        formControlName="userName" name="name">
+                                </mat-form-field>
+                                <div *ngIf="myform.get('userName')!.touched && myform.get('userName')!.invalid">
+                                    <div *ngIf="myform.get('userName')!.hasError('required')">
+                                        <font color="red">*User Name is required</font>
+                                    </div>
+                                    <div *ngIf="myform.get('userName')!.hasError('pattern')">
+                                        <font color="red">*Invalid User Name</font>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Email Id</mat-label>
+                                    <input matInputtype="email" placeholder="" aria-label="Name" matInput
+                                        formControlName="userEmail" name="email">
+                                </mat-form-field>
+                                <div *ngIf="myform.get('userEmail')!.touched && myform.get('userEmail')!.invalid">
+                                    <div *ngIf="myform.get('userEmail')!.hasError('required')">
+                                        <font color="red">*Email Id is required</font>
+                                    </div>
+                                    <div *ngIf="myform.get('userEmail')!.hasError('pattern')">
+                                        <font color="red">*Invalid Email Id</font>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Password</mat-label>
+                                    <input matInputtype="passsword" placeholder="" aria-label="Name" matInput
+                                        formControlName="userPassword" name="name">
+                                </mat-form-field>
+                                <div *ngIf="myform.get('userPassword')!.touched && myform.get('userPassword')!.invalid">
+                                    <div *ngIf="myform.get('userPassword')!.hasError('required')">
+                                        <font color="red">*Password is required</font>
+                                    </div>
+                                    <div *ngIf="myform.get('userPassword')!.hasError('pattern')">
+                                        <font color="red">*Invalid Password</font>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <mat-form-field appearance="outline">
+                                    <mat-label>Mobile Number</mat-label>
+                                    <input matInputtype="text" placeholder="" aria-label="Name" matInput
+                                        formControlName="userMobileNumber" name="name">
+                                </mat-form-field>
+                                <div
+                                    *ngIf="myform.get('userMobileNumber')!.touched && myform.get('userMobileNumber')!.invalid">
+                                    <div *ngIf="myform.get('userMobileNumber')!.hasError('required')">
+                                        <font color="red">*Mobile Number is required</font>
+                                    </div>
+                                    <div *ngIf="myform.get('userMobileNumber')!.hasError('pattern')">
+                                        <font color="red">*Invalid Mobile Number</font>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+
+            </mat-card-content>
+            <mat-card-actions>
+
+                <button mat-raised-button color="primary" (click)="registerUser(myform.value)">Register</button>
+            </mat-card-actions>
+            <tr>Existing User ? &nbsp;<a routerLink="/Login">Login</a></tr>
+
+            <mat-card-content>
+                <font color="green">{{result}}</font>
+            </mat-card-content>
+        </mat-card>
+
+    </div>
+</body>

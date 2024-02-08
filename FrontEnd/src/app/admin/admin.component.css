@@ -1,0 +1,54 @@
+
+
+.useit {
+    background-image: url('https://img.freepik.com/free-vector/gradient-connection-background_52683-116652.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+img {
+    /* height: 70%; */
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    /* margin: 10%; */
+    transition: transform 0.3s;
+    /* Add smooth transition effect */
+}
+
+
+.card:hover {
+    transform: scale(1.1);
+    /* Zoom in when hovered */
+}
+
+
+button {
+    width: 100%;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+.container {
+    /* margin: auto; */
+    width: 60%;
+}

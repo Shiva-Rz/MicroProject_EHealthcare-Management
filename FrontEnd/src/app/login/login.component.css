@@ -1,0 +1,49 @@
+.example-card {
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border-color: white;
+    border-width: 2px;
+    align-items: center;
+    color: white;
+    border-radius: 30px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+.div1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+mat-form-field {
+    width: 100%;
+    
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button {
+    width: 200px;
+}
+
+.title {
+    margin-right: 1cm;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+mat-card {
+    width: 400px;
+}
+
+body {
+    background-image: url('https://media.medriva.com/content/uploads/2024/01/advancements-in-healthcare-technology-20240102035121.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

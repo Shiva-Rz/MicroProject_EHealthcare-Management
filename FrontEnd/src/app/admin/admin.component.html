@@ -1,0 +1,90 @@
+<html>
+<mat-toolbar color="primary">
+
+    <b>
+        <h1 style="font-family: 'Times New Roman', Times, serif;">E-Healthcare Application</h1>
+    </b>
+    <span class="example-spacer"></span>
+
+    <div class="example-button-row">
+        <a mat-stroked-button routerLink="">Logout</a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+    </div>
+
+</mat-toolbar>
+
+<body class="useit">
+    <!-- <div class="tbl-body">
+        <br>
+        <div class="card">
+            <div class="card-header">
+                <b>
+                    <h3>User Details</h3>
+                </b>
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead class="table-dark">
+                        <tr scope="row">
+                            <th scope="col">User ID</th>
+                            <th scope="col">User Type </th>
+                            <th scope="col">User Email</th>
+                            <th scope="col">User Password</th>
+                            <th scope="col">User Name</th>
+                            <th scope="col">User Mobile Number</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr *ngFor="let user of userList" scope="row">
+                            <td scope="col">{{user.userId}}</td>
+                            <td scope="col">{{user.userType}}</td>
+                            <td scope="col">{{user.userEmail}}</td>
+                            <td scope="col">{{user.userPassword}}</td>
+                            <td scope="col">{{user.userName}}</td>
+                            <td scope="col">{{user.userMobileNumber}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div> -->
+    
+    <br><br><br><br><br><br><br><br>
+    <div class="container" id="card2">
+        
+        <div class="row">
+            <div class="col-md-4" id="card2">
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2023/07/14/23/57/ai-generated-8127875_1280.png"
+                        class="card-img-top" alt="Add Patient">
+                    <div class="card-body">
+                        <button mat-raised-button color="primary" routerLink="/doctoroperation">Manage Doctor Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" id="card2">
+                <div class="card">
+                    <img src="https://img.freepik.com/premium-vector/doctor-visiting-patient-during-recovery-semi-flat-color-vector-characters_151150-10632.jpg" style="height: 227px;"
+                        class="card-img-top" alt="Add Patient">
+                    <div class="card-body">
+                        <button mat-raised-button color="primary" routerLink="/Patient">Manage Patient Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" id="card2">
+                <div class="card">
+                    <img src="https://img.freepik.com/premium-photo/system-administrator-appreciation-day-is-observed-every-year-july-generative-ai_870512-1088.jpg"
+                        class="card-img-top" alt="Add Patient">
+                    <div class="card-body">
+                        <button mat-raised-button color="primary" routerLink="/viewAllUser">Manage All User Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

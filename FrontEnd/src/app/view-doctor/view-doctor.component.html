@@ -1,0 +1,36 @@
+
+<body>
+    <div class="tbl-body">
+        <br>
+        <div class="card">
+            <div class="card-header">
+                <b><h3>Doctor Details</h3></b>
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead class="table-dark">
+                        <tr scope="row">
+                            <th scope="col">User ID</th>
+                            <th scope="col">User Name</th>
+                            <th scope="col">User Type</th>
+                            <th scope="col">User Email</th>
+                            <th scope="col">User Password</th>
+                            <th scope="col">User Mobile Number</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr *ngFor="let doctor of docList" scope="row">
+                            <td scope="col">{{doctor.userId}}</td>
+                            <td scope="col">{{doctor.userName}}</td>
+                            <td scope="col">{{doctor.userType}}</td>
+                            <td scope="col">{{doctor.userEmail}}</td>
+                            <td scope="col">{{doctor.userPassword}}</td>
+                            <td scope="col">{{doctor.userMobileNumber}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    
+        </div>
+    </div>
+    </body>
