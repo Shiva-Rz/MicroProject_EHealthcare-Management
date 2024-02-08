@@ -62,15 +62,4 @@ public class UserController {
 		return usersList;
 	}
 
-	@GetMapping("ViewAllUsers")
-	public List<User> viewAllUsers() {
-		Iterator<User> user = service.showAllUsers().iterator();
-		List<User> usersList = new ArrayList<User>();
-
-		while (user.hasNext()) {
-			usersList.add(user.next());
-		}
-		return usersList;
-	}
-
 }
