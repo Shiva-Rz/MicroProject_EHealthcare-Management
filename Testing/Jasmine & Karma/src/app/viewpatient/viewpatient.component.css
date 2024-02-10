@@ -1,0 +1,43 @@
+.tbl-body {
+    width: 50%;
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center ;
+    
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image : url('https://assets.isu.pub/document-structure/230112083042-7aa0aab8c4e61535e530dc951e159b90/v1/4fbf0152aed903a1274996204661cfcb.jpeg');
+}
+
+tbody {
+    position: relative;
+    align-self: center;
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+
+.card-header {
+    font-weight: bolder;
+    margin: auto;
+    background: none;
+    border: none;
+}
+
+.card {
+    margin-top: 20%;
+    background-color: transparent;
+    font-weight: bolder;
+    backdrop-filter: blur(15px);
+}
+
+td{
+    background-color: transparent;
+}
+
+tr:hover {
+    background-color: white;
+}
